@@ -35,3 +35,13 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+# TODO
+
+- [ ] About me (resume)
+- [ ] Links to Twitter, Linkedin, Github
+- [ ] Link to PhD and articles
+- [ ] Link to IRT
+- [ ] Interesting article pages + notes
+- [ ] Snippets
+- [ ] Articles/Blog
