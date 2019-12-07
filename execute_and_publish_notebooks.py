@@ -2,21 +2,24 @@ import time
 from pathlib import Path
 import nbformat
 from nbconvert.preprocessors import ExecutePreprocessor
-from nbconvert import HTMLExporter
+from nbconvert import HTMLExporter, MarkdownExporter
 from nbconvert.writers import FilesWriter
 
 if __name__ == '__main__':
 
     notebook_pth = Path.cwd() / "notebooks"
 
-    html_pth = Path.cwd() / "html"
+    html_pth = Path.cwd() / "notebooks_md"
 
     html_pth.mkdir(exist_ok=True)
 
     ep = ExecutePreprocessor(timeout=600, kernel_name='python3')
 
-    html_exporter = HTMLExporter()
-    html_exporter.template_file = 'full'
+    # html_exporter = HTMLExporter()
+    # html_exporter.template_file = 'full'
+
+    html_exporter = MarkdownExporter()
+
 
     notebooks = list(
         filter(
@@ -52,9 +55,12 @@ if __name__ == '__main__':
         writer = FilesWriter()
         writer.build_directory = str(html_pth)
 
-        writer.write(body, resources, notebook_name=executed_notebook.name)
+        nb_name = executed_notebook.stem.split(".")[0]
 
-        snippet_map_to_file[executed_notebook.stem.split(".")[0]] = Path("notebooks") / executed_notebook.with_suffix(".html").name
+        writer.write(body, resources, notebook_name=nb_name)
+
+
+        snippet_map_to_file[nb_name] = Path("notebooks_md") / (str(nb_name)+".md")
 
 
     with open("snippets.md", "w") as f:

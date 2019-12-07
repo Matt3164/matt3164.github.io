@@ -1,3 +1,15 @@
 # Snippets 
- 
-- [pandas](notebooks/pandas.executed.html) 
+- [hyperopt](notebooks_md/hyperopt.md) 
+- [pandas](notebooks_md/pandas.md) 
+- [mlflow](notebooks_md/mlflow.md) 
+- [scipy](notebooks_md/scipy.md) 
+- [sklearn](notebooks_md/sklearn.md) 
+- [unique](notebooks_md/unique.md) 
+- [pytorch](notebooks_md/pytorch.md) 
+- [toolz](notebooks_md/toolz.md) 
+- [itertools](notebooks_md/itertools.md) 
+- [type_hints](notebooks_md/type_hints.md) 
+- [functools](notebooks_md/functools.md) 
+- [keras](notebooks_md/keras.md) 
+- [joblib](notebooks_md/joblib.md) 
+- [tensorflow](notebooks_md/tensorflow.md) 
