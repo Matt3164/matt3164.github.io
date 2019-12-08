@@ -2,6 +2,7 @@
 - [hyperopt](notebooks_md/hyperopt.md) 
 - [pandas](notebooks_md/pandas.md) 
 - [mlflow](notebooks_md/mlflow.md) 
+- [opencv](notebooks_md/opencv.md) 
 - [scipy](notebooks_md/scipy.md) 
 - [sklearn](notebooks_md/sklearn.md) 
 - [unique](notebooks_md/unique.md) 
@@ -13,3 +14,4 @@
 - [keras](notebooks_md/keras.md) 
 - [joblib](notebooks_md/joblib.md) 
 - [tensorflow](notebooks_md/tensorflow.md) 
+- [skimage](notebooks_md/skimage.md) 
