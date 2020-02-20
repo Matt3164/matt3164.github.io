@@ -1,6 +1,4 @@
-# opencv
-
-## imread/imwrite
+# How to read and write images using opencv
 
 
 ```python

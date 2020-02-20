@@ -124,7 +124,7 @@ imshow(descs_img)
 
 
 
-    <matplotlib.image.AxesImage at 0x7fee242ed0b8>
+    <matplotlib.image.AxesImage at 0x7ff4946b4da0>
 
 
 
@@ -348,7 +348,7 @@ imshow(result)
 
 
 
-    <matplotlib.image.AxesImage at 0x7fedf8eac3c8>
+    <matplotlib.image.AxesImage at 0x7ff4698f9240>
 
 
 

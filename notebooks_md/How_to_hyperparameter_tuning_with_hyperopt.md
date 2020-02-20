@@ -1,13 +1,12 @@
-# hyperopt
+# How to hyperparameter tuning using hyperopt
 
-[Source](https://docs.azuredatabricks.net/_static/notebooks/hyperopt-sklearn-model-selection.html)
+The original inspiration came from [here](https://docs.azuredatabricks.net/_static/notebooks/hyperopt-sklearn-model-selection.html).
 
 
-[Hyperparatemer](https://en.wikipedia.org/wiki/Hyperparameter_(machine_learning)) tuning is a hot topic right now.
+Please check [Hyperparatemer tuning](https://en.wikipedia.org/wiki/Hyperparameter_(machine_learning)) for more details on the basic principles.
 
-`hyperopt` is one o fthe library used to make it feasible.
 
-Here is an example on how to use it to optimize the type classifier and its parameters at the end of sklearn pipeline
+`hyperopt` is one of the many open source libraries available to do it in Python. Here is an example on how to use it to optimize the type classifier and its parameters at the end of sklearn pipeline
 
 
 ```python
@@ -60,5 +59,12 @@ best_result = fmin(
 
 ```
 
-    100%|██████████| 4/4 [00:09<00:00,  2.35s/it, best loss: -0.932]
+     25%|██▌       | 1/4 [00:00<00:01,  2.65it/s, best loss: -0.933]
+
+    /home/mlegoff/anaconda3/envs/juicy/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+      % self.max_iter, ConvergenceWarning)
+    
+
+
+    100%|██████████| 4/4 [00:07<00:00,  1.86s/it, best loss: -0.944]
 

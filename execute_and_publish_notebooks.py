@@ -33,7 +33,10 @@ if __name__ == '__main__':
     for notebook in notebooks:
         print(f"Processing {notebook}")
 
-        executed_notebook = notebook.with_suffix(".executed.ipynb")
+
+        # executed_notebook = notebook.with_suffix(".executed.ipynb")
+
+        executed_notebook = notebook.parent.parent / "notebook_executed" / notebook.name
 
         if not executed_notebook.exists():
 
@@ -66,7 +69,7 @@ if __name__ == '__main__':
     with open("snippets.md", "w") as f:
         f.write("# Snippets \n")
         for key, val in snippet_map_to_file.items():
-            f.write(f"- [{key}]({str(val)}) \n")
+            f.write(f"- [{key.replace('_', ' ')}]({str(val)}) \n")
 
 
 
