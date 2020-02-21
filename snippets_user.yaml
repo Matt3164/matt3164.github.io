@@ -33,9 +33,18 @@ Image_Processing:
   How_to_read_write_using_skimage: !!python/object/apply:pathlib.PosixPath
     - notebooks_md
     - How_to_read_write_using_skimage.md
-  How_to_rescale_intensity_of_an_imageskimage: !!python/object/apply:pathlib.PosixPath
+  How_to_rescale_intensity_of_an_image: !!python/object/apply:pathlib.PosixPath
     - notebooks_md
-    - How_to_rescale_intensity_of_an_imageskimage.md
+    - How_to_rescale_intensity_of_an_image.md
+  How_to_compute_Haar_features: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_compute_Haar_features.md
+  How_to_compute_LBP_features: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_compute_LBP_features.md
+  How_to_compute_daisy_features: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_compute_daisy_features.md
 
 
 Pandas:
@@ -79,3 +88,7 @@ Work_in_progress:
   How_to_type_hints: !!python/object/apply:pathlib.PosixPath
   - notebooks_md
   - How_to_type_hints.md
+  How_to_compute_haralick_features: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_compute_haralick_features.md
+
