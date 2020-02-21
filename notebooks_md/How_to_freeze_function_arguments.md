@@ -1,7 +1,7 @@
 # How to freeze function arguments using partial
 
 
-`partial` is used to freeze some arguments of a function. It is extremely useful for functionnal programming
+`partial` is used to freeze some arguments of a function.
 
 
 ```python

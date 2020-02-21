@@ -1,6 +1,7 @@
 import time
 from pathlib import Path
 import nbformat
+import yaml
 from nbconvert.preprocessors import ExecutePreprocessor
 from nbconvert import HTMLExporter, MarkdownExporter
 from nbconvert.writers import FilesWriter
@@ -38,6 +39,8 @@ if __name__ == '__main__':
 
         executed_notebook = notebook.parent.parent / "notebook_executed" / notebook.name
 
+        executed_notebook.parent.mkdir(exist_ok=True)
+
         if not executed_notebook.exists():
 
             t = time.time()
@@ -65,6 +68,8 @@ if __name__ == '__main__':
 
         snippet_map_to_file[nb_name] = Path("notebooks_md") / (str(nb_name)+".md")
 
+    with open("snippets.yaml", "w") as f:
+        yaml.dump(snippet_map_to_file, f)
 
     with open("snippets.md", "w") as f:
         f.write("# Snippets \n")

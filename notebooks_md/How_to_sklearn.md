@@ -24,7 +24,7 @@ pipe.fit(*data)
 
 ```
 
-    /home/mlegoff/anaconda3/envs/juicy/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.
+    /home/matthieu/anaconda2/envs/pypurr/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.
       FutureWarning)
 
 
@@ -75,7 +75,7 @@ pipe = make_pipeline(
 pipe.fit(*data)
 ```
 
-    /home/mlegoff/anaconda3/envs/juicy/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+    /home/matthieu/anaconda2/envs/pypurr/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
       % self.max_iter, ConvergenceWarning)
 
 
@@ -140,7 +140,7 @@ pipe.fit(*data)
 
 ```
 
-    /home/mlegoff/anaconda3/envs/juicy/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+    /home/matthieu/anaconda2/envs/pypurr/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
       % self.max_iter, ConvergenceWarning)
 
 

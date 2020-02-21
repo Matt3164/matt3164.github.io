@@ -1,45 +1,15 @@
-# skimage
-
-## imread/imwrite
-
-
-```python
-from skimage.data import chelsea
-from skimage.io import imread, imsave
-from matplotlib.pyplot import imshow, axis, subplot
-import matplotlib.pyplot as plt
-%matplotlib inline
-
-im = chelsea()
-
-im_path = "/tmp/chelsea.jpg"
-
-imsave(im_path, im)
-
-loaded_im = imread(im_path)
-
-imshow(loaded_im)
-axis("off")
-```
-
-
-
-
-    (-0.5, 450.5, 299.5, -0.5)
-
-
-
-
-![png](output_1_1.png)
-
-
-## rescale_intensity
+# How to rescale intensity of an image
 
 
 ```python
 from skimage.exposure import rescale_intensity
+from skimage.data import chelsea
+import matplotlib.pyplot as plt
+from matplotlib.pyplot import subplot, imshow , axis
 import numpy as np
-im = chelsea()
+
+im = loaded_im = chelsea()
+
 subplot(1,2,1)
 imshow(rescale_intensity(loaded_im, in_range="image", out_range=np.uint8))
 axis("off")
@@ -53,10 +23,6 @@ axis("off")
 
     (-0.5, 450.5, 299.5, -0.5)
 
-
-
-
-![png](output_3_1.png)
 
 
 ## HOG
@@ -89,15 +55,17 @@ axis("off")
 
 ```
 
+    /home/matthieu/anaconda2/envs/pypurr/lib/python3.7/site-packages/ipykernel_launcher.py:10: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+      # Remove the CWD from sys.path while we load stuff.
+    /home/matthieu/anaconda2/envs/pypurr/lib/python3.7/site-packages/ipykernel_launcher.py:16: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+      app.launch_new_instance()
+
+
 
 
 
     (-0.5, 63.5, 63.5, -0.5)
 
-
-
-
-![png](output_5_1.png)
 
 
 TODO: Visualisation for all cell size
@@ -124,12 +92,8 @@ imshow(descs_img)
 
 
 
-    <matplotlib.image.AxesImage at 0x7ff4946b4da0>
+    <matplotlib.image.AxesImage at 0x7f9f42c4b748>
 
-
-
-
-![png](output_8_1.png)
 
 
 # Haar
@@ -194,15 +158,17 @@ imshow(lbp, cmap=plt.cm.gray)
 axis("off")
 ```
 
+    /home/matthieu/anaconda2/envs/pypurr/lib/python3.7/site-packages/ipykernel_launcher.py:10: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+      # Remove the CWD from sys.path while we load stuff.
+    /home/matthieu/anaconda2/envs/pypurr/lib/python3.7/site-packages/ipykernel_launcher.py:13: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+      del sys.path[0]
+
+
 
 
 
     (-0.5, 31.5, 31.5, -0.5)
 
-
-
-
-![png](output_12_1.png)
 
 
 ## Haralick features
@@ -227,15 +193,17 @@ imshow(out, cmap=plt.cm.gray)
 axis("off")
 ```
 
+    /home/matthieu/anaconda2/envs/pypurr/lib/python3.7/site-packages/ipykernel_launcher.py:9: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+      if __name__ == '__main__':
+    /home/matthieu/anaconda2/envs/pypurr/lib/python3.7/site-packages/ipykernel_launcher.py:12: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+      if sys.path[0] == '':
+
+
 
 
 
     (-0.5, 255.5, 255.5, -0.5)
 
-
-
-
-![png](output_15_1.png)
 
 
 
@@ -254,15 +222,17 @@ imshow(out, cmap=plt.cm.gray)
 axis("off")
 ```
 
+    /home/matthieu/anaconda2/envs/pypurr/lib/python3.7/site-packages/ipykernel_launcher.py:7: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+      import sys
+    /home/matthieu/anaconda2/envs/pypurr/lib/python3.7/site-packages/ipykernel_launcher.py:10: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+      # Remove the CWD from sys.path while we load stuff.
+
+
 
 
 
     (-0.5, 255.5, 255.5, -0.5)
 
-
-
-
-![png](output_16_1.png)
 
 
 ## Convolutions (Gabor kernels)
@@ -299,15 +269,21 @@ imshow(out, cmap=plt.cm.gray)
 axis("off")
 ```
 
+    /home/matthieu/anaconda2/envs/pypurr/lib/python3.7/site-packages/skimage/filters/_gabor.py:90: RuntimeWarning: divide by zero encountered in true_divide
+      g[:] = np.exp(-0.5 * (rotx ** 2 / sigma_x ** 2 + roty ** 2 / sigma_y ** 2))
+    /home/matthieu/anaconda2/envs/pypurr/lib/python3.7/site-packages/skimage/filters/_gabor.py:90: RuntimeWarning: invalid value encountered in true_divide
+      g[:] = np.exp(-0.5 * (rotx ** 2 / sigma_x ** 2 + roty ** 2 / sigma_y ** 2))
+    /home/matthieu/anaconda2/envs/pypurr/lib/python3.7/site-packages/skimage/filters/_gabor.py:91: RuntimeWarning: invalid value encountered in true_divide
+      g /= 2 * np.pi * sigma_x * sigma_y
+    /home/matthieu/anaconda2/envs/pypurr/lib/python3.7/site-packages/ipykernel_launcher.py:23: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+    /home/matthieu/anaconda2/envs/pypurr/lib/python3.7/site-packages/ipykernel_launcher.py:26: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+
+
 
 
 
     (-0.5, 255.5, 255.5, -0.5)
 
-
-
-
-![png](output_18_1.png)
 
 
 ## Image collection
@@ -348,10 +324,6 @@ imshow(result)
 
 
 
-    <matplotlib.image.AxesImage at 0x7ff4698f9240>
+    <matplotlib.image.AxesImage at 0x7f9f2a5247f0>
 
-
-
-
-![png](output_23_1.png)
 

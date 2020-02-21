@@ -1,0 +1,81 @@
+Python_Basics:
+  How_to_copy_iterators: !!python/object/apply:pathlib.PosixPath
+  - notebooks_md
+  - How_to_copy_iterators.md
+  How_to_flatten_iterators: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_flatten_iterators.md
+  How_to_freeze_function_arguments: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_freeze_function_arguments.md
+  How_to_manipulate_an_iterator: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_manipulate_an_iterator.md
+
+Numerical_Python:
+  How_to_cache_using_joblib: !!python/object/apply:pathlib.PosixPath
+  - notebooks_md
+  - How_to_cache_using_joblib.md
+  How_to_get_unique_array_elements: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_get_unique_array_elements.md
+  How_to_interoplate_using_scipy: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_interoplate_using_scipy.md
+
+Image_Processing:
+  How_to_compute_hog_features: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_compute_hog_features.md
+  How_to_read_and_write_images_with_opencv: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_read_and_write_images_with_opencv.md
+  How_to_read_write_using_skimage: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_read_write_using_skimage.md
+  How_to_rescale_intensity_of_an_imageskimage: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_rescale_intensity_of_an_imageskimage.md
+
+
+Pandas:
+  How_to_create_a_dataframe: !!python/object/apply:pathlib.PosixPath
+  - notebooks_md
+  - How_to_create_a_dataframe.md
+  How_to_load_unload_a_dataframe_from_a_csv: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_load_unload_a_dataframe_from_a_csv.md
+
+Python_Machine_Learning:
+  How_to_hyperparameter_tuning_with_hyperopt: !!python/object/apply:pathlib.PosixPath
+  - notebooks_md
+  - How_to_hyperparameter_tuning_with_hyperopt.md
+
+Work_in_progress:
+  How_to_keras: !!python/object/apply:pathlib.PosixPath
+  - notebooks_md
+  - How_to_keras.md
+  How_to_mlflow: !!python/object/apply:pathlib.PosixPath
+  - notebooks_md
+  - How_to_mlflow.md
+  How_to_multiprocess_using_joblib: !!python/object/apply:pathlib.PosixPath
+  - notebooks_md
+  - How_to_multiprocess_using_joblib.md
+  How_to_pytorch: !!python/object/apply:pathlib.PosixPath
+  - notebooks_md
+  - How_to_pytorch.md
+  How_to_skimage: !!python/object/apply:pathlib.PosixPath
+  - notebooks_md
+  - How_to_skimage.md
+  How_to_sklearn: !!python/object/apply:pathlib.PosixPath
+  - notebooks_md
+  - How_to_sklearn.md
+  How_to_tensorflow: !!python/object/apply:pathlib.PosixPath
+  - notebooks_md
+  - How_to_tensorflow.md
+  How_to_toolz: !!python/object/apply:pathlib.PosixPath
+  - notebooks_md
+  - How_to_toolz.md
+  How_to_type_hints: !!python/object/apply:pathlib.PosixPath
+  - notebooks_md
+  - How_to_type_hints.md
