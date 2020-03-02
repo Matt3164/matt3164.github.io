@@ -1,5 +1,7 @@
 # How to get unique array elements
 
+Title is pretty self explanatory. A common operation consists of getting unqiue elements from an array.
+
 
 ```python
 import numpy as np
@@ -9,7 +11,7 @@ np.unique(np.random.randint(0,255,size=(10,)))
 
 
 
-    array([ 24,  27,  52,  64,  72,  74, 115, 152, 187, 199])
+    array([ 32,  72,  74,  83, 101, 167, 180, 199, 236, 254])
 
 
 
@@ -23,7 +25,7 @@ np.unique(np.random.randint(0,255,size=(10,)), return_counts=True)
 
 
 
-    (array([ 61,  67,  96, 116, 120, 121, 152, 193, 203, 236]),
+    (array([ 10,  42,  43,  77, 113, 124, 187, 195, 205, 214]),
      array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1]))
 
 
@@ -37,5 +39,5 @@ df = pandas.DataFrame(np.random.randint(0,255,size=(10,)) , columns=["test"])
 print(pandas.unique(df.test))
 ```
 
-    [157   5 148 121  75 152  47 235  36 176]
+    [ 39 125 197 105 188 196 113 177 130 228]
 

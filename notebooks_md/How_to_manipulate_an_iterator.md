@@ -1,6 +1,8 @@
 # How to manipulate an iterator
 
-Example on how to use `islice` to modify start index, stop index and even step.
+It is common to want to truncate or modify an iterator. Fortunately, many tools are available including `islice` from the `itertools` library.
+
+Here is an example on how to use `islice` to modify start index, stop index and even step.
 
 
 ```python

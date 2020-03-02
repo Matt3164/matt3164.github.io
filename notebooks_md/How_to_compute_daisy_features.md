@@ -23,7 +23,7 @@ imshow(descs_img)
 
 
 
-    <matplotlib.image.AxesImage at 0x7f1c512f3710>
+    <matplotlib.image.AxesImage at 0x7fe8ac1d1d68>
 
 
 

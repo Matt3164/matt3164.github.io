@@ -10,6 +10,35 @@ from matplotlib.pyplot import plot
 
 
 ```python
+nbrs = np.random.randint(0,1024, size=(100,))
+plot(nbrs)
+
+x = np.arange(0, nbrs.shape[0])
+
+f = interpolate.interp1d(x, nbrs,kind = 'cubic')
+
+xnew = np.linspace(0, nbrs.shape[0]-1, 1000)
+
+plot(xnew, f(xnew))
+
+```
+
+
+
+
+    [<matplotlib.lines.Line2D at 0x7f833f6017f0>]
+
+
+
+
+![png](output_2_1.png)
+
+
+
+```python
+import numpy as np
+from scipy import interpolate
+
 x = np.linspace(0, 4, 12)
 
 y = np.cos(x**2/3+4)
@@ -34,10 +63,10 @@ plt.plot(xnew, new_values1, "+--")
 
 
 
-    [<matplotlib.lines.Line2D at 0x7f9b784055f8>]
+    [<matplotlib.lines.Line2D at 0x7f833f3ce588>]
 
 
 
 
-![png](output_3_1.png)
+![png](output_4_1.png)
 

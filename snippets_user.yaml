@@ -11,6 +11,13 @@ Python_Basics:
   How_to_manipulate_an_iterator: !!python/object/apply:pathlib.PosixPath
     - notebooks_md
     - How_to_manipulate_an_iterator.md
+  How_to_use_toolz_compose: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_use_toolz_compose.md
+  How_to_use_toolz_pipe: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_use_toolz_pipe.md
+
 
 Numerical_Python:
   How_to_cache_using_joblib: !!python/object/apply:pathlib.PosixPath
@@ -45,6 +52,22 @@ Image_Processing:
   How_to_compute_daisy_features: !!python/object/apply:pathlib.PosixPath
     - notebooks_md
     - How_to_compute_daisy_features.md
+  How_to_compute_gabor_features: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_compute_gabor_features.md
+  How_to_compute_random_convolution_features: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_compute_random_convolution_features.md
+  How_to_extract_patches_using_skimage: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_extract_patches_using_skimage.md
+  How_to_generate_fake_data_using_skimage: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_generate_fake_data_using_skimage.md
+  How_to_use_skimage_image_collection: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_use_skimage_image_collection.md
+
 
 
 Pandas:
@@ -59,6 +82,16 @@ Python_Machine_Learning:
   How_to_hyperparameter_tuning_with_hyperopt: !!python/object/apply:pathlib.PosixPath
   - notebooks_md
   - How_to_hyperparameter_tuning_with_hyperopt.md
+  How_to_use_sklearn_column_transformer: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_use_sklearn_column_transformer.md
+  How_to_use_sklearn_feature_aggregation: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_use_sklearn_feature_aggregation.md
+  How_to_use_sklearn_pipeline: !!python/object/apply:pathlib.PosixPath
+    - notebooks_md
+    - How_to_use_sklearn_pipeline.md
+
 
 Work_in_progress:
   How_to_keras: !!python/object/apply:pathlib.PosixPath
@@ -73,18 +106,9 @@ Work_in_progress:
   How_to_pytorch: !!python/object/apply:pathlib.PosixPath
   - notebooks_md
   - How_to_pytorch.md
-  How_to_skimage: !!python/object/apply:pathlib.PosixPath
-  - notebooks_md
-  - How_to_skimage.md
-  How_to_sklearn: !!python/object/apply:pathlib.PosixPath
-  - notebooks_md
-  - How_to_sklearn.md
   How_to_tensorflow: !!python/object/apply:pathlib.PosixPath
   - notebooks_md
   - How_to_tensorflow.md
-  How_to_toolz: !!python/object/apply:pathlib.PosixPath
-  - notebooks_md
-  - How_to_toolz.md
   How_to_type_hints: !!python/object/apply:pathlib.PosixPath
   - notebooks_md
   - How_to_type_hints.md
